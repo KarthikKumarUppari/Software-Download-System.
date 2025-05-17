@@ -1,0 +1,206 @@
+/* Reset some browser default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #12a417;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo img {
+    border-radius: 10%;
+    max-width: 10vh;
+    height: 5vh;
+}
+.navbar-links {
+    font-size: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-links a.active {
+    color: #f4f4f4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    padding: 20px;
+    color: #333;
+    transition: background-color 1s ease, transform 0.5s ease;
+}
+
+body.loaded {
+    background-color: #f0f8ff; /* Change background color after page loads */
+    transform: scale(1.05); /* Slightly scale the body on load */
+}
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+button {
+    background-color: #35c216;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+h2 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+   
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Top nav */
+.container > a {
+    margin-right: 15px;
+}
+
+/* Upload button */
+.fab {
+    background-color: #0fae1c;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.fab:hover {
+    background-color: #005fa3;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #1ca207;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Pagination styling */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination a.active {
+    background-color: #0aba19;
+    color: white;
+    border-color: #0077cc;
+}
